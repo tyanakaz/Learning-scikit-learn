@@ -35,6 +35,7 @@ c.InteractiveShellApp.exec_lines = [
     'import matplotlib.pyplot as plt',
     'import pandas as pd',
     'import mglearn',
+    'import sklearn as sl',
     '%matplotlib notebook'
 ]
 
