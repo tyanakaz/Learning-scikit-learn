@@ -5,5 +5,6 @@ RUN set -x \
         && pip install mglearn 
 
 WORKDIR /opt/notebooks
+COPY /opt/notebooks/.ipython /root
 
 EXPOSE 8888
