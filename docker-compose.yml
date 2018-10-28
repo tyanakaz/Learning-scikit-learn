@@ -5,7 +5,7 @@ services:
     build:
       context: .
     image: continuumio/anaconda3:latest
-    command: /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root && cp -a /opt/notebooks/.ipython /root"
+    command: /bin/bash -c "cp -a /opt/notebooks/.ipython /root && /opt/conda/bin/conda install jupyter -y --quiet && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
     volumes: 
     - .:/opt/notebooks
     ports:
